@@ -73,14 +73,14 @@ void *VC1(){
     }
         
     for(i=0;i<2*en;i++){
-        c1[1][e1[i]]=c1[1][e1[i]]+1;     //算出每个点的重复数
+        c1[1][e1[i]]=c1[1][e1[i]]+1;     //calculate the appearance time for each vertex
     }
     
     
 
     
     
-    for (i = 0; i < (vexnumber - 1); i++)       //冒泡排序
+    for (i = 0; i < (vexnumber - 1); i++)       //bubble sort
     {
         for (j = 0; j < vexnumber - 1 - i; j++)
         {
@@ -136,7 +136,7 @@ void *VC1(){
             }
         }
 
-        for ( z = 0; z < (vexnumber - 1); z++)       //冒泡排序
+        for ( z = 0; z < (vexnumber - 1); z++)       //bubble sort
         {
             for (z1 = 0; z1 < vexnumber - 1 - z; z1++)
             {
