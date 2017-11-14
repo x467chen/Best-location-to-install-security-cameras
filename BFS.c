@@ -51,7 +51,7 @@ void DELETEQueue(QFR *q, Elemtype *e){
 }
 
 
-void CLEANQueue(QFR* q){         //用于每次条用结束的清空
+void CLEANQueue(QFR* q){         //clear at the end
     while(q->front){
         q->rear=q->front->next;
         free( q->front);
@@ -59,7 +59,7 @@ void CLEANQueue(QFR* q){         //用于每次条用结束的清空
     }
 }
 
-int EMPTYQueue(QFR *q){        //如果不行用参考的
+int EMPTYQueue(QFR *q){        
     if (q->front==q->rear){
         return 1 ;
     }
